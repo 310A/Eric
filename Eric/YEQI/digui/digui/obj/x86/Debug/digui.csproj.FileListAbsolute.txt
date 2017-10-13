@@ -1,0 +1,5 @@
+C:\Users\Eric\AppData\Local\Temporary Projects\digui\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Eric\AppData\Local\Temporary Projects\digui\bin\Debug\digui.exe
+C:\Users\Eric\AppData\Local\Temporary Projects\digui\bin\Debug\digui.pdb
+C:\Users\Eric\AppData\Local\Temporary Projects\digui\obj\x86\Debug\digui.exe
+C:\Users\Eric\AppData\Local\Temporary Projects\digui\obj\x86\Debug\digui.pdb

@@ -1,0 +1,5 @@
+C:\Users\Eric\AppData\Local\Temporary Projects\maopao\bin\Debug\maopao.exe
+C:\Users\Eric\AppData\Local\Temporary Projects\maopao\bin\Debug\maopao.pdb
+C:\Users\Eric\AppData\Local\Temporary Projects\maopao\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Eric\AppData\Local\Temporary Projects\maopao\obj\x86\Debug\maopao.exe
+C:\Users\Eric\AppData\Local\Temporary Projects\maopao\obj\x86\Debug\maopao.pdb
