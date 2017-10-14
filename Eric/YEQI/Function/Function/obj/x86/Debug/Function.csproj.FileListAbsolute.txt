@@ -1,0 +1,4 @@
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function\Function\bin\Debug\Function.exe
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function\Function\bin\Debug\Function.pdb
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function\Function\obj\x86\Debug\Function.exe
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function\Function\obj\x86\Debug\Function.pdb
