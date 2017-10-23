@@ -1,7 +1,7 @@
--#study list 
- -including: 
- +# study list 
- +includes: 
+#study list 
+including: 
+# study list 
+includes: 
   
   leetcode (js) <br/>
   project
