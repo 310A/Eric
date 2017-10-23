@@ -1,5 +1,3 @@
-#study list 
-including: 
 # study list 
 includes: 
   
