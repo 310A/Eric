@@ -1,0 +1,4 @@
+{'hello': 'Welcome to Atmatrix community!👏👏Please speak CHINESE or ENGLISH✔️ & Do not forget to read other Rules at Pinned Message',
+                'Is there any news about development progress?': 'Sure.You can find it at https://github.com/atmatrix',
+                'development progress': 'Sure.You can find it at https://github.com/atmatrix',
+                '雷电网络': '雷电网络，打通区块链与人工智能世界的“雷神之锤 https://mp.weixin.qq.com/s/Pc8KMJOzQ5RFiLhwhIdMyg'}
