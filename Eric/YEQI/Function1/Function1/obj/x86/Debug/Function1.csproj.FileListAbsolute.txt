@@ -1,0 +1,5 @@
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function1\Function1\bin\Debug\Function1.exe
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function1\Function1\bin\Debug\Function1.pdb
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function1\Function1\obj\x86\Debug\Function1.exe
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function1\Function1\obj\x86\Debug\Function1.pdb
+C:\Users\Eric\Documents\Visual Studio 2010\Projects\Eric\Eric\YEQI\Function1\Function1\obj\x86\Debug\Function1.csprojResolveAssemblyReference.cache
