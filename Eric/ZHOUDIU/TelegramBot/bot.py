@@ -18,7 +18,6 @@ import telepot
 
 # global bot
 
-
 class FilterAwesome(BaseFilter):
     def filter(self, message):
         return ('hello' in message.text or 'hello' in message.text
