@@ -1,0 +1,1241 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.580
+[MUSIC] Well, it's great to see you here
+in class again.
+
+2
+00:00:09.766 --> 00:00:13.180
+We're getting close to being half way
+through Week One.
+
+3
+00:00:13.382 --> 00:00:17.336
+Right now, you should start to have a feel
+for what it's like to program in Python,
+
+4
+00:00:17.336 --> 00:00:20.732
+you know, about expressions, you know,
+about variables, you know, about
+
+5
+00:00:20.732 --> 00:00:23.317
+functions.
+But really the number of operations that
+
+6
+00:00:23.317 --> 00:00:27.119
+you have at your disposal when building a
+Python program is fairly limited.
+
+7
+00:00:27.119 --> 00:00:31.275
+So, what I'm going to do in this lecture
+is I'm going to tell you about a few more
+
+8
+00:00:31.275 --> 00:00:34.976
+operations that you have at your disposal
+to help build more interesting programs.
+
+9
+00:00:34.976 --> 00:00:38.524
+In particular, I'm going to talk about
+remainders in Modular Arithmetic.
+
+10
+00:00:38.524 --> 00:00:41.870
+I'll talk a little bit about how to work
+with strings and numbers.
+
+11
+00:00:41.870 --> 00:00:46.540
+And then, I'll finish it off by telling
+you to get access to some more built in
+
+12
+00:00:46.540 --> 00:00:49.820
+functions inside Python.
+Okay, let's go to it.
+
+13
+00:00:52.640 --> 00:00:55.867
+So, let's talk about a few more operations
+that we can use in Python.
+
+14
+00:00:55.867 --> 00:00:59.665
+For the first part of the lecture, we are
+going to talk about Modular Arithmetic.
+
+15
+00:00:59.665 --> 00:01:03.367
+Now, you may not have heard that phrase
+before, but you actually know how to do
+
+16
+00:01:03.367 --> 00:01:06.262
+Modular Arithmetic.
+In third grade, you learned how to do long
+
+17
+00:01:06.262 --> 00:01:08.971
+division.
+You had a dividend and a divisor, and you
+
+18
+00:01:08.971 --> 00:01:12.978
+divided the, divided one into the other.
+What came out was a quotient and
+
+19
+00:01:12.978 --> 00:01:15.204
+remainder.
+So, that remainder is actually,
+
+20
+00:01:15.204 --> 00:01:18.933
+essentially your computing Modular
+Arithmetic when you compute remainders.
+
+21
+00:00:47.359 --> 00:01:22.717
+So, I'm going to give you a few examples
+illustrating how to use Modular
+
+22
+00:01:22.717 --> 00:01:25.499
+Arithmetic.
+So, let's start of with a really simple
+
+23
+00:01:25.499 --> 00:01:28.115
+problem.
+Let's say, we have a 2-digit number, and
+
+24
+00:01:28.115 --> 00:01:31.009
+we'd like to compute its tens digit and
+its ones digit.
+
+25
+00:01:31.009 --> 00:01:35.630
+So, how can we get the tens digit?
+I think it's not too hard, we actually
+
+26
+00:01:35.630 --> 00:01:41.925
+have something that computes the quotient,
+it's the energy division operator slash,
+
+27
+00:01:41.925 --> 00:01:45.763
+slash.
+So, we could say num energy divided by ten
+
+28
+00:01:45.763 --> 00:01:51.751
+so, ten goes into 49 four times, so I'm
+going to predict we're going to get out
+
+29
+00:01:51.751 --> 00:01:54.324
+the number four.
+Sure enough.
+
+30
+00:01:54.324 --> 00:01:58.230
+Now, we'd like to also get the ones digit.
+So, how can we do that?
+
+31
+00:01:58.230 --> 00:02:02.633
+Well, we need to compute the remainder.
+Whenever we take num, we take the
+
+32
+00:02:02.633 --> 00:02:07.036
+remainder with respect to ten.
+So, let's see if we can find out what the
+
+33
+00:02:07.036 --> 00:02:11.128
+remainder operation is in Python.
+Let's go to CodeSkulptor Python.
+
+34
+00:02:11.128 --> 00:02:13.857
+And we're going to squeeze down here.
+Let's see.
+
+35
+00:02:14.043 --> 00:02:17.330
+Integers and floating-point numbers.
+Let's scroll down.
+
+36
+00:02:17.330 --> 00:02:20.260
+Hm.
+Modular Arithmetic that sounds kind of
+
+37
+00:02:20.260 --> 00:02:23.462
+plausible.
+And sure enough, that's actually what
+
+38
+00:02:23.462 --> 00:02:27.006
+we're going to use.
+We're going to use the send operator to
+
+39
+00:02:27.006 --> 00:02:31.606
+compute a remainder here.
+So, we could say, print tens. Now, we can
+
+40
+00:02:31.606 --> 00:02:35.673
+print out the ones digit also and we get
+49.
+
+41
+00:02:35.673 --> 00:02:43.252
+And notice we can always reconstruct the
+original number by just taking ten times
+
+42
+00:02:43.252 --> 00:02:51.108
+the tens digit plus the ones digit.
+So, there's nothing special about 49 here.
+
+43
+00:02:51.108 --> 00:02:58.279
+That actually works no matter what.
+Alright, let's talk about another example
+
+44
+00:02:58.279 --> 00:03:03.099
+of Modular Arithmetic using remainder.
+So, this is the classical example that
+
+45
+00:03:03.099 --> 00:03:08.299
+you'll see, it's called clock arithmetic.
+And the idea is we're going to want to do
+
+46
+00:03:08.299 --> 00:03:13.372
+computations involving hours, and either a
+12-hour or 24-hour clock.
+
+47
+00:03:13.372 --> 00:03:18.318
+So, let's pop over to one note here.
+And what you can see right here is I might
+
+48
+00:03:18.318 --> 00:03:22.250
+have kind of two tables.
+The one on the one on left here.
+
+49
+00:03:22.250 --> 00:03:26.120
+This is the 12-hour clock.
+And so, we list all the hours in the day
+
+50
+00:03:26.120 --> 00:03:29.715
+on the 12-hour clock.
+We have twelve hours that are a.m., twelve
+
+51
+00:03:29.715 --> 00:03:32.480
+hours in p.m.
+Notice that the hours start at twelve,
+
+52
+00:03:32.480 --> 00:03:35.797
+And one, two, three, four, five, six,
+seven, eight, nine, ten, and eleven.
+
+53
+00:03:35.963 --> 00:03:40.553
+If we'd like to do arithmetic on the
+12-hour clock, we can almost use remainder
+
+54
+00:03:40.553 --> 00:03:43.207
+to do that.
+So, let's go down here and consider a
+
+55
+00:03:43.207 --> 00:03:45.972
+problem.
+Right now, in this clock, I have listing
+
+56
+00:03:45.972 --> 00:03:50.201
+the time as I have the time listed as
+eight:00 p.m.
+
+57
+00:03:50.201 --> 00:03:55.101
+So, here it is eight:00 p.m.
+Now, I would like to skip and figure out
+
+58
+00:03:55.101 --> 00:03:59.430
+kind of eight hours ahead what the new
+time would be.
+
+59
+00:03:59.430 --> 00:04:05.800
+So, let's go down here and we'll just
+write hours and I'll draw very carefully.
+
+60
+00:04:09.920 --> 00:04:14.560
+My handwriting is not so great so I'll try
+to go slow here.
+
+61
+00:04:14.560 --> 00:04:18.800
+So, we go ahead, we end up here,
+And where do we end up?
+
+62
+00:04:18.800 --> 00:04:24.580
+We end up at four:00 a.m.
+And what do we do up here?
+
+63
+00:04:24.580 --> 00:04:31.073
+We went plus eight hours.
+So, we could do that using remainder.
+
+64
+00:04:31.073 --> 00:04:35.711
+We could take eight plus eight would be
+sixteen, I take this remainder twelve,
+
+65
+00:04:35.713 --> 00:04:38.981
+that would be four.
+But now, it's a little awkward here
+
+66
+00:04:38.981 --> 00:04:44.210
+because we have to change a.m. to p.m. and
+the big problem is that in some sense, if
+
+67
+00:04:44.210 --> 00:04:48.590
+we end up with twelve and we take the
+remainder twelve we get zero.
+
+68
+00:04:48.590 --> 00:04:51.277
+But, in this clock, kind of zero is
+twelve.
+
+69
+00:04:51.277 --> 00:04:56.790
+So, the, the 12-hour clock is not a great
+clock for kind of doing power arithmetic.
+
+70
+00:04:56.790 --> 00:05:01.821
+So, there's another clock, and it's
+preferred by the military, for probably
+
+71
+00:05:01.821 --> 00:05:06.025
+this is one of the reasons why, it's
+called the 24-hour clock.
+
+72
+00:05:06.025 --> 00:05:07.610
+There's no a.m.
+And p.m.
+
+73
+00:05:07.610 --> 00:05:12.916
+The, the starting hour is at zero, it's
+0000, and it's 0100, 0200, all the way up
+
+74
+00:05:12.916 --> 00:05:16.706
+to 2100, 2200, 2300.
+And so, in this model, we can do clock
+
+75
+00:05:16.706 --> 00:05:22.220
+arithmetic in a much cleaner way.
+So, I have an example over here.
+
+76
+00:05:23.260 --> 00:05:28.040
+I have an example over here, that
+involves, let's see.
+
+77
+00:05:28.660 --> 00:05:33.910
+There are 2000. What do we want to do?
+We want to go ahead eight hours.
+
+78
+00:05:33.910 --> 00:05:42.707
+So, we drop that real quick.
+So, I can go here, and that would be I
+
+79
+00:05:42.707 --> 00:05:49.190
+guess, 0400.
+So, we'd like to go for eight hours here.
+
+80
+00:05:49.190 --> 00:05:55.090
+So, we could do that, we could say, plus,
+plus eight hours.
+
+81
+00:05:55.090 --> 00:05:59.157
+And so, what can we do?
+We can use modular, Arithmetic to do this.
+
+82
+00:05:59.157 --> 00:06:03.397
+And this is actually is much cleaner
+because we could take twenty plus eight,
+
+83
+00:06:03.397 --> 00:06:06.205
+that's 28.
+We can take a remainder 24, that's four.
+
+84
+00:06:06.205 --> 00:06:10.788
+So, we can really use Modular Arithmetic
+and remainders to actually do, essentially
+
+85
+00:06:10.788 --> 00:06:14.914
+computation of hours on the military clock
+very easily, the 24-hour clock.
+
+86
+00:06:14.914 --> 00:06:18.180
+So, let's go back and do that in
+CodeSkulptor real quick.
+
+87
+00:06:18.180 --> 00:06:22.817
+So, let's pop back over here.
+So, here we have hours twenty, so we're at
+
+88
+00:06:22.817 --> 00:06:25.439
+2000..
+So, that's military time.
+
+89
+00:06:25.439 --> 00:06:30.883
+And we like to go through and actually
+figure out what the time will be after we
+
+90
+00:06:30.883 --> 00:06:35.320
+finish an 8-hour shift.
+So, we could do that, we could say print
+
+91
+00:06:35.320 --> 00:06:44.440
+hour plus shift, remainder 24.
+So, if we print that,
+
+92
+00:06:45.760 --> 00:06:47.860
+We got 28 out.
+What happened here?
+
+93
+00:06:47.860 --> 00:06:52.316
+We thought we were going to get four.
+Well, let's think about this as a, in
+
+94
+00:06:52.316 --> 00:06:56.263
+terms of precedents.
+Remainder has higher precedence than plus.
+
+95
+00:06:56.263 --> 00:07:00.910
+So, what happenned here in Python, was
+that we computed shift remainder 24.
+
+96
+00:07:00.910 --> 00:07:06.066
+So, let's say, the shift was eight, so is
+eight remainder 24 is eight, we added that
+
+97
+00:07:06.066 --> 00:07:09.567
+to twenty, we got 28.
+So, to actually do this computation
+
+98
+00:07:09.567 --> 00:07:14.787
+correctly, what we need to do is we need
+to go through and add first and then, take
+
+99
+00:07:14.787 --> 00:07:17.015
+the remainder second.
+So, we do that,
+
+100
+00:07:17.015 --> 00:07:20.860
+What comes out is four.
+Okay, let's do another example.
+
+101
+00:07:22.360 --> 00:07:24.668
+Okay.
+Let's look at one more application using
+
+102
+00:07:24.668 --> 00:07:27.778
+Modular Arithmetic.
+And this will be something she'll actually
+
+103
+00:07:27.778 --> 00:07:30.638
+do fairly often in the class.
+You're going to have a 2D game.
+
+104
+00:07:30.638 --> 00:07:34.351
+Objects may be moving around.
+And you have to deal with what happens
+
+105
+00:07:34.351 --> 00:07:36.760
+when an object gets near the edge of the
+canvas.
+
+106
+00:07:36.910 --> 00:07:40.021
+Maybe it's going to bang off of it.
+Maybe it's going to come to stop.
+
+107
+00:07:40.021 --> 00:07:44.086
+But sometimes, you'd like it to actually
+do maybe something where it wraps around.
+
+108
+00:07:44.086 --> 00:07:46.594
+It goes off one side and comes on the
+other side.
+
+109
+00:07:46.745 --> 00:07:50.659
+Let me just show you a quick little demo.
+Here's a part of a game you're going to
+
+110
+00:07:50.659 --> 00:07:52.866
+actually build later on.
+This is a spaceship.
+
+111
+00:07:52.866 --> 00:07:56.703
+And our spaceship starts flying, and we
+get close to the edge of the screen , and
+
+112
+00:07:56.703 --> 00:08:00.300
+what's going to happen?
+Well, it pops on the other side of the
+
+113
+00:08:00.300 --> 00:08:04.230
+screen, it wrapped around.
+If I go off the top of the screen,
+
+114
+00:08:04.230 --> 00:08:07.289
+I wrapped around.
+I go back on the bottom of the screen
+
+115
+00:08:07.289 --> 00:08:10.682
+after I round the top.
+So, how do we model this mathematically?
+
+116
+00:08:10.682 --> 00:08:14.910
+You could store kind of some, some
+information to represent the, the position
+
+117
+00:08:14.910 --> 00:08:18.582
+of the center of the ship.
+But when we go off one edge of the screen,
+
+118
+00:08:18.582 --> 00:08:23.032
+we better change that position so that
+it's kind of in a different position way
+
+119
+00:08:23.032 --> 00:08:26.981
+on the other side of the screen.
+So, we can use Modular Arithmetic to do
+
+120
+00:08:26.981 --> 00:08:29.812
+that.
+So, let's go back and look at this. So,
+
+121
+00:08:29.812 --> 00:08:35.539
+lets see where the situation where we are
+keeping track of the horizontal position
+
+122
+00:08:35.539 --> 00:08:40.852
+of the ship and so we're at this, the
+frame that I created was 800 pixels wide.
+
+123
+00:08:40.852 --> 00:08:45.889
+So, we are getting close to that
+right-hand edge, and we say, we need to go
+
+124
+00:08:45.889 --> 00:08:48.442
+right five pixels.
+How can we do that?
+
+125
+00:08:48.442 --> 00:08:53.755
+Well, I claimed we can do that using
+remainders, we can say, position is equal
+
+126
+00:08:53.755 --> 00:08:58.930
+to, well, the old position plus whatever
+the move was, we could do that remainder,
+
+127
+00:08:58.930 --> 00:09:06.550
+The width of the screen, and if we print
+out position what's going to come out is
+
+128
+00:09:06.550 --> 00:09:09.890
+two.
+The new, the position of the ship after we
+
+129
+00:09:09.890 --> 00:09:13.491
+move five units right has not overpassed
+the right-hand side of the screen.
+
+130
+00:09:13.491 --> 00:09:16.612
+The screen is actually over the left-hand
+screened, side of the screen it positioned
+
+131
+00:09:16.612 --> 00:09:18.725
+to.
+So, we've popped from the right-hand side
+
+132
+00:09:18.725 --> 00:09:21.653
+to the left-hand side.
+The interesting thing is this also works
+
+133
+00:09:21.653 --> 00:09:24.342
+the other way.
+And to do that, you have to understand how
+
+134
+00:09:24.342 --> 00:09:27.991
+a remainder works on negative numbers.
+If we take the remainder of something
+
+135
+00:09:27.991 --> 00:09:30.633
+that's negative.
+What happens is we're always going to get
+
+136
+00:09:30.633 --> 00:09:34.235
+a number back in the range from zero to
+width. Zero to the number that we're
+
+137
+00:09:34.235 --> 00:09:37.790
+taking the remainder of respect to.
+So, what's going to happen is when we take
+
+138
+00:09:37.790 --> 00:09:41.729
+the remainder of something that's negative
+we're going to get something that appears
+
+139
+00:09:41.729 --> 00:09:43.794
+on the screen,
+Something in the right range.
+
+140
+00:09:43.794 --> 00:09:46.676
+We'll just do that tangibly.
+Let's say, we were the other way.
+
+141
+00:09:46.676 --> 00:09:50.399
+Let's say, we were at position two.
+So, we're going to counter reverse this.
+
+142
+00:09:50.399 --> 00:09:53.185
+We were positioned to, and we did a move
+of -five.
+
+143
+00:09:53.186 --> 00:09:57.249
+We kind of move to the left.
+We're on the left-hand side of the screen
+
+144
+00:09:57.249 --> 00:10:00.500
+and we move left, that's going be -five.
+Run the same code.
+
+145
+00:10:00.500 --> 00:10:04.049
+Well, what's going to come out, we're
+going to get two minus five is negative
+
+146
+00:10:04.049 --> 00:10:06.798
+three.
+So, we have to find -three remainder 800.
+
+147
+00:10:06.798 --> 00:10:10.963
+And I told you that's always going to be a
+number between the zero and the width.
+
+148
+00:10:10.963 --> 00:10:14.665
+So, it comes out as 797.
+So, we kind of took -three, we added 800
+
+149
+00:10:14.665 --> 00:10:16.979
+to it.
+It gives a number between zero and 800,
+
+150
+00:10:16.979 --> 00:10:19.859
+it's 797, so we pop to the right-hand side
+of the screen.
+
+151
+00:10:19.859 --> 00:10:23.561
+So, notice using remainders here actually
+works, works in both directions.
+
+152
+00:10:23.561 --> 00:10:27.726
+It works when you're moving left, it works
+when you're moving right, it works when
+
+153
+00:10:27.726 --> 00:10:30.194
+you're going up, it works when you're
+going down.
+
+154
+00:10:30.194 --> 00:10:34.411
+So, remainder is going to be your friend
+when you're doing screen wrapping in your
+
+155
+00:10:34.411 --> 00:10:40.165
+games.
+The next topic that I'd like to cover is
+
+156
+00:10:40.165 --> 00:10:44.608
+talk a little bit more about how to
+convert back and forth between data types.
+
+157
+00:10:44.779 --> 00:10:49.449
+In the lecture on Arithmetic expressions,
+we talked about the operator int and the
+
+158
+00:10:49.449 --> 00:10:53.949
+operator float, and how those kind of
+converted data in other forms into either
+
+159
+00:10:53.949 --> 00:10:58.197
+an integer or floating-point number.
+There's times when you're going to have a
+
+160
+00:10:58.197 --> 00:11:02.436
+number and you're going to want to convert
+it into string so you can print it out.
+
+161
+00:11:02.593 --> 00:11:06.413
+your first three projects are going to
+involve really just doing lots of
+
+162
+00:11:06.413 --> 00:11:08.977
+printing.
+You won't get into using the canvas and
+
+163
+00:11:08.977 --> 00:11:12.692
+doing drawing until Week four.
+So, what I want to do here is just talk a
+
+164
+00:11:12.692 --> 00:11:16.773
+little bit about how you can convert
+things into a string, and so I'm going to
+
+165
+00:11:16.773 --> 00:11:19.704
+motivate it by just talking about a very
+simple problem.
+
+166
+00:11:19.704 --> 00:11:22.530
+So, we, we talked earlier about 24, the
+24-hour clock.
+
+167
+00:11:22.530 --> 00:11:30.191
+And, in a 24-hour clock, you always kind
+of think about the, the hours, as being
+
+168
+00:11:30.490 --> 00:11:36.050
+two digit even if there's a zero in front
+of the, even if it's like three:000 a.m.,
+
+169
+00:11:36.050 --> 00:11:39.270
+it's really 03.
+So, here three:000 a.m. would be 0300.
+
+170
+00:11:40.074 --> 00:11:45.234
+So, what I'd like to do is talk about how
+to take an hour in the 24-hour clock, and
+
+171
+00:11:45.234 --> 00:11:47.381
+convert it into a string that look like
+this.
+
+172
+00:11:47.381 --> 00:11:49.433
+Especially, make sure it has a leading
+zero.
+
+173
+00:11:49.433 --> 00:11:52.486
+So, to do that, we're going to use a
+little bit of Modular Arithmetic using
+
+174
+00:11:52.725 --> 00:11:55.158
+remainders.
+We're going to use what we talked about
+
+175
+00:11:55.158 --> 00:11:58.784
+before we got the ones in tens digit.
+And then, we're going to have to figure
+
+176
+00:11:58.784 --> 00:12:02.315
+out how to do a couple of string
+operations, get those numbers and convert
+
+177
+00:12:02.315 --> 00:12:05.082
+them into a string.
+And then, we're going to have to figure
+
+178
+00:12:05.082 --> 00:12:08.899
+out how to kind of format that string so
+it'll look like something in this form
+
+179
+00:12:08.899 --> 00:12:10.617
+here.
+So, let's see if we can do that.
+
+180
+00:12:10.617 --> 00:12:12.860
+So, the first thing is let's get the ones
+digit.
+
+181
+00:12:15.960 --> 00:12:19.180
+I think we've already done that with the
+10's digit.
+
+182
+00:12:23.960 --> 00:12:28.642
+So, we can just print those out.
+We could print tens and ones, let's just
+
+183
+00:12:28.642 --> 00:12:31.412
+see what that looks like.
+This doesn't look good.
+
+184
+00:12:31.412 --> 00:12:36.226
+Well, I guess we had a zero and a three.
+Okay, yeah, I'll have, let's do this.
+
+185
+00:12:36.226 --> 00:12:41.568
+Let's print out one more thing, let's
+print out a string which has the minutes
+
+186
+00:12:41.568 --> 00:12:45.460
+or it seems the minutes are, or even hour.
+So, if we do that,
+
+187
+00:12:45.780 --> 00:12:50.073
+We get kind of 03:00..
+And you can see there's a bunch of space
+
+188
+00:12:50.073 --> 00:12:54.303
+is in there and it doesn't look very good.
+So, what could we do here?
+
+189
+00:12:54.303 --> 00:12:59.417
+We could try to convert these numbers into
+strings, that might be the first thing.
+
+190
+00:12:59.417 --> 00:13:04.468
+And then we could think about the other
+ways to kind of manage the string to get
+
+191
+00:13:04.468 --> 00:13:07.310
+it to something that looks like what we
+want.
+
+192
+00:13:07.310 --> 00:13:11.287
+So hm, it turns out that there's a
+function that we can do that.
+
+193
+00:13:11.287 --> 00:13:15.265
+We could convert the number into string
+using the str function.
+
+194
+00:13:15.265 --> 00:13:21.100
+So, we can try our next attempt, we could
+say, print str of tens and str of ones.
+
+195
+00:13:21.100 --> 00:13:28.319
+And then we can keep printing our string
+called 00. So now, if we do that.
+
+196
+00:13:28.319 --> 00:13:31.694
+Well, dang.
+It's the exact same thing.
+
+197
+00:13:31.975 --> 00:13:35.913
+This is now a string, this is now a
+string.
+
+198
+00:13:35.913 --> 00:13:40.320
+But it just turns out they're exactly the
+same.
+
+199
+00:13:40.320 --> 00:13:42.981
+Hm.
+But now, that there are strings, we can do
+
+200
+00:13:42.981 --> 00:13:46.340
+some things to them that we couldn't do
+with numbers.
+
+201
+00:13:46.340 --> 00:13:51.093
+So, for numbers, when we use the plus
+separator on them, we added the numbers.
+
+202
+00:13:51.093 --> 00:13:55.973
+It turns out, Python likes to take common
+operators, and try to interpret them as
+
+203
+00:13:55.973 --> 00:13:59.015
+being applied to things that you're not
+used to.
+
+204
+00:13:59.015 --> 00:14:02.247
+So, for example, there's a plus operator
+for strings.
+
+205
+00:14:02.247 --> 00:14:04.972
+So, what would plus operator do for
+strings?
+
+206
+00:14:04.972 --> 00:14:09.344
+Well, it joins the strings together.
+So, what I'm going to do is I'm going to
+
+207
+00:14:09.344 --> 00:14:18.010
+try one more attempt here.
+I'm going to say, print plus the string of
+
+208
+00:14:18.010 --> 00:14:26.424
+ones, plus and let's add in 00..
+Let's try that, to see if anything good
+
+209
+00:14:26.424 --> 00:14:29.800
+happens.
+So, notice what happened here now.
+
+210
+00:14:29.800 --> 00:14:35.219
+This plus operator joined the strings
+together, and it didn't throw an error
+
+211
+00:14:35.219 --> 00:14:39.123
+because this is a string and this is a
+string and this is a string so it's nice
+
+212
+00:14:39.123 --> 00:14:41.465
+to actually take strings and join them
+together.
+
+213
+00:14:41.465 --> 00:14:45.271
+And most importantly, he didn't put in all
+these annoying blank spaces in here.
+
+214
+00:14:45.271 --> 00:14:49.175
+This is an example of what's called string
+form, string formatting, and you're going
+
+215
+00:14:49.175 --> 00:14:51.810
+to get good at it after the next couple of
+weeks here.
+
+216
+00:14:51.810 --> 00:14:55.762
+But the most important thing is remember
+this function str. It converts something
+
+217
+00:14:55.762 --> 00:14:59.422
+into the string just like int converted
+something into an integer and flow,
+
+218
+00:14:59.422 --> 00:15:03.228
+converted something into a floating-point
+number, str converts something into a
+
+219
+00:15:03.228 --> 00:15:06.022
+string.
+Let's finish off and we'll do one more
+
+220
+00:15:06.022 --> 00:15:08.641
+thing.
+I mentioned that there are lots of other
+
+221
+00:15:08.641 --> 00:15:13.155
+functions available inside Python. the way
+you get at those functions, these extra
+
+222
+00:15:13.155 --> 00:15:17.557
+functions, these are things called modules
+and they are kind of things that are
+
+223
+00:15:17.557 --> 00:15:22.015
+outside of basic Python that people have
+built and added into Python and to get
+
+224
+00:15:22.015 --> 00:15:25.415
+access to those functions, you need to go
+through and import them.
+
+225
+00:15:25.415 --> 00:15:28.090
+So, in Python, you need to say, import
+module name.
+
+226
+00:15:28.090 --> 00:15:32.606
+So, if you go into the Hello World page,
+you'll see something that says, Import
+
+227
+00:15:32.606 --> 00:15:37.416
+Simple GUI." Simple GUI is a module that
+Scott and I built that actually opens up a
+
+228
+00:15:37.416 --> 00:15:42.096
+canvas and draws Hello World on it.
+There are two common modules that you
+
+229
+00:15:42.096 --> 00:15:45.857
+should know about, that you'll need to use
+as the class goes on.
+
+230
+00:15:45.857 --> 00:15:50.812
+One is Math and the other one is Random.
+And you can take a peek at them up here in
+
+231
+00:15:50.812 --> 00:15:54.661
+the docs.
+So, we can go to CodeSkulptor Python and
+
+232
+00:15:54.661 --> 00:15:56.894
+scroll down.
+And there you go.
+
+233
+00:15:56.894 --> 00:16:01.254
+There's the Math module.
+We'll just scroll down there and see.
+
+234
+00:16:01.254 --> 00:16:05.899
+It has kind of all the common math
+functions that you're used to.
+
+235
+00:16:06.114 --> 00:16:11.760
+If you're looking for a math function
+that's not built into Python, you can say
+
+236
+00:16:11.760 --> 00:16:15.119
+import math, and go down here and use all
+these.
+
+237
+00:16:15.333 --> 00:16:19.961
+We'll go back here.
+For example, I could say print Math.pi and
+
+238
+00:16:19.961 --> 00:16:23.761
+this is print out a very nice
+approximation to pi.
+
+239
+00:16:23.761 --> 00:16:29.536
+And the other one that you're going to use
+this week, it's going to be a random
+
+240
+00:16:29.536 --> 00:16:34.324
+module and it gives you the ability to
+generate random numbers.
+
+241
+00:16:34.324 --> 00:16:38.960
+So, also, it's also described up here so
+let's go up and close that.
+
+242
+00:16:38.960 --> 00:16:44.287
+Go back down, I look in the Random module,
+and it's got a smaller set of functions
+
+243
+00:16:44.287 --> 00:16:47.181
+here.
+But there's some functions that you're
+
+244
+00:16:47.181 --> 00:16:51.654
+going to be using fairly often.
+The one you'll probably, the two that
+
+245
+00:16:51.654 --> 00:16:57.837
+you'll probably use the most will be it's
+going to be random.randrage. And so, that
+
+246
+00:16:57.837 --> 00:17:03.164
+one you should take a look at and figure
+out how it works and you'll be all good.
+
+247
+00:17:03.164 --> 00:17:06.256
+Okay.
+So, those are some other functions you can
+
+248
+00:17:06.256 --> 00:17:10.400
+use in this week and the upcoming weeks.
+See you next lecture.

@@ -1,0 +1,1128 @@
+WEBVTT
+
+1
+00:00:00.128 --> 00:00:02.390
+[MUSIC]
+
+2
+00:00:02.390 --> 00:00:10.110
+Hi, I'm John.
+Welcome to my first video for this course.
+
+3
+00:00:10.110 --> 00:00:12.890
+So, we're going to be looking at a bunch
+of examples.
+
+4
+00:00:12.890 --> 00:00:14.240
+First on errors.
+
+5
+00:00:14.240 --> 00:00:16.286
+When you get an error message, how do
+
+6
+00:00:16.286 --> 00:00:19.111
+you understand what it means and fix the
+problem.
+
+7
+00:00:19.111 --> 00:00:21.841
+Second we're going to look at a few
+probing tips
+
+8
+00:00:21.841 --> 00:00:24.990
+that should help you when you're writing
+your own code.
+
+9
+00:00:28.310 --> 00:00:31.319
+So here's our first example.
+Let's run it and see what happens.
+
+10
+00:00:34.220 --> 00:00:37.500
+It starts to print out this message about
+the volume of a cube,
+
+11
+00:00:37.500 --> 00:00:42.060
+but then has a name error saying that
+volume is not defined, kay.
+
+12
+00:00:42.060 --> 00:00:45.570
+It highlights the problem line here, where
+in fact we
+
+13
+00:00:45.570 --> 00:00:49.840
+are using the function named volume to do
+our computation.
+
+14
+00:00:49.840 --> 00:00:52.170
+But where did I define volume?
+
+15
+00:00:52.170 --> 00:00:55.806
+Well, I didn't.
+I defined volume cube, kay.
+
+16
+00:00:55.806 --> 00:01:00.430
+here I should be calling volume cube, so
+let's fix that, kay.
+
+17
+00:01:03.150 --> 00:01:06.600
+So, now let's run it again and make sure.
+Oh, whoops!
+
+18
+00:01:06.600 --> 00:01:08.610
+We have another name error.
+
+19
+00:01:08.610 --> 00:01:12.180
+This time, I used the name Sidde here in
+
+20
+00:01:12.180 --> 00:01:17.015
+this line instead of the variable named
+side, side.
+
+21
+00:01:17.015 --> 00:01:18.330
+Kay, so a typo here.
+
+22
+00:01:21.410 --> 00:01:23.948
+Kay, so running it finally it works.
+
+23
+00:01:23.948 --> 00:01:29.790
+So, notice that we get a name error when
+we misspell either a
+
+24
+00:01:29.790 --> 00:01:35.570
+function name or a variable name here and
+don't have a definition of that name.
+
+25
+00:01:38.900 --> 00:01:42.190
+Alright, let's see what happens with this
+next example.
+
+26
+00:01:42.190 --> 00:01:45.050
+We'll run it and well, once again we get
+
+27
+00:01:45.050 --> 00:01:48.630
+a name error here, name random is not
+defined.
+
+28
+00:01:48.630 --> 00:01:55.300
+So well, we're trying to use
+random.randrange to roll a die.
+
+29
+00:01:55.300 --> 00:01:57.100
+Hmm, what's the problem here?
+
+30
+00:01:57.100 --> 00:02:01.890
+well, here let's go to the documentation,
+kay.
+
+31
+00:02:01.890 --> 00:02:04.240
+And we can scroll down here to the random
+
+32
+00:02:04.240 --> 00:02:11.520
+module, and it tells us well, yes
+random.randrange is right.
+
+33
+00:02:11.520 --> 00:02:15.400
+But whenever we need to use it well, yeah,
+import
+
+34
+00:02:15.400 --> 00:02:18.220
+random, we forgot that and it tells us up
+here.
+
+35
+00:02:18.220 --> 00:02:22.402
+You know, whenever we're using anything
+from this module, import random.
+
+36
+00:02:22.402 --> 00:02:26.440
+We forgot to do that in our code here so
+let's add that.
+
+37
+00:02:27.980 --> 00:02:29.380
+Yeah, we didn't provide that
+
+38
+00:02:29.380 --> 00:02:31.880
+definition of random that it's a module
+here, so
+
+39
+00:02:31.880 --> 00:02:35.730
+let's try this again, running it and it
+works fine.
+
+40
+00:02:35.730 --> 00:02:39.968
+It, it, rolls our dice and each time we
+get a different value for our pair of die.
+
+41
+00:02:42.920 --> 00:02:45.780
+In this example we want to compute the
+volume of the sphere.
+
+42
+00:02:45.780 --> 00:02:48.010
+Let's see what happens when we run it.
+
+43
+00:02:48.010 --> 00:02:53.775
+We get a attribute error.
+Module object has no attribute pi.
+
+44
+00:02:53.775 --> 00:02:58.860
+Hmm, well we're using math.pi and I'm
+importing math correctly.
+
+45
+00:02:58.860 --> 00:02:59.980
+So what's the problem?
+
+46
+00:02:59.980 --> 00:03:01.370
+I thought pi was defined.
+
+47
+00:03:01.370 --> 00:03:05.900
+Let's re-, let's go to our docs, and we've
+got a little delay on load right now.
+
+48
+00:03:07.610 --> 00:03:12.210
+let's search for pi and there we go.
+
+49
+00:03:13.440 --> 00:03:17.520
+There's math.pi, but it's lower case,
+okay.
+
+50
+00:03:18.730 --> 00:03:23.510
+All of our names are case-sensitive, so I
+misspelled this, and any time
+
+51
+00:03:23.510 --> 00:03:26.080
+you misspell the part after the period,
+
+52
+00:03:26.080 --> 00:03:27.930
+that's going to give you an attribute
+error.
+
+53
+00:03:27.930 --> 00:03:31.220
+So changing that and rerunning, it now
+works.
+
+54
+00:03:33.210 --> 00:03:38.620
+In this example we want to calculate the
+area of a triangle so, well.
+
+55
+00:03:39.720 --> 00:03:46.750
+We get a type error, area triangles takes
+exactly two arguments but one was given.
+
+56
+00:03:46.750 --> 00:03:51.520
+So let's look at our function call which
+is here, area triangle b.
+
+57
+00:03:51.520 --> 00:03:54.620
+Well, in fact, I did give it one argument.
+
+58
+00:03:54.620 --> 00:03:58.220
+instead of the two that it's expecting I
+forgot
+
+59
+00:03:58.220 --> 00:04:04.939
+to pass an h, so let's add that.
+Okay, and re-run.
+
+60
+00:04:04.939 --> 00:04:06.091
+[SOUND].
+
+61
+00:04:06.091 --> 00:04:09.690
+I get another type error.
+Oh, hmm?
+
+62
+00:04:11.330 --> 00:04:16.010
+But it, at least it's different.
+we fixed that one problem.
+
+63
+00:04:16.010 --> 00:04:21.640
+Type error can't multiply sequence by non
+ends of type number, huh?
+
+64
+00:04:22.645 --> 00:04:24.470
+Alright, let's see what it's complaining
+about.
+
+65
+00:04:25.510 --> 00:04:29.120
+Okay, so I am doing a multiplication like
+it's talked about.
+
+66
+00:04:29.120 --> 00:04:30.630
+As we need to in this formula.
+
+67
+00:04:31.690 --> 00:04:32.910
+But, what's going on?
+
+68
+00:04:34.040 --> 00:04:37.850
+So, let's look up at, at what's actually
+being printed out, and it says,
+
+69
+00:04:37.850 --> 00:04:43.280
+the area of the triangle with base five
+and height two plus two is.
+
+70
+00:04:43.280 --> 00:04:44.400
+Height should be four.
+
+71
+00:04:44.400 --> 00:04:48.510
+Why isn't it adding two plus two there to
+get four?
+
+72
+00:04:49.770 --> 00:04:56.400
+Well, the problem is we have strings here
+not numeric expressions.
+
+73
+00:04:56.400 --> 00:04:56.720
+This is
+
+74
+00:04:56.720 --> 00:05:02.920
+simply the string two space plu- two space
+plus space two.
+
+75
+00:05:02.920 --> 00:05:05.590
+It's not a mathematical expression
+resulting in four.
+
+76
+00:05:06.880 --> 00:05:11.800
+So that's why this is resulting in
+multiplying a
+
+77
+00:05:11.800 --> 00:05:16.780
+sequence because, well, it's trying to
+multiply a sequence base,
+
+78
+00:05:16.780 --> 00:05:18.470
+which is a string and a string is a
+
+79
+00:05:18.470 --> 00:05:22.880
+kind of a sequence by something that's not
+an integer.
+
+80
+00:05:22.880 --> 00:05:25.430
+Well, height here is also not an integer.
+
+81
+00:05:25.430 --> 00:05:28.397
+Turns out you can actually multiply
+strings from an
+
+82
+00:05:28.397 --> 00:05:32.580
+integer, but that's a whole separate
+thing, separate operation.
+
+83
+00:05:32.580 --> 00:05:35.470
+Kay, so let's just get rid of the double
+quotes here.
+
+84
+00:05:36.750 --> 00:05:42.325
+Turn these into mathematical expressions
+and rerun and we get what we want.
+
+85
+00:05:45.760 --> 00:05:47.910
+So, next here we have a little function
+
+86
+00:05:47.910 --> 00:05:50.500
+that's supposed to simply check whether
+we're giving
+
+87
+00:05:50.500 --> 00:05:56.025
+it Mary, and if so it gives us a message,
+that yes it has Mary, otherwise no.
+
+88
+00:05:56.025 --> 00:05:59.260
+Okay, so let's try running this, 'kay.
+
+89
+00:05:59.260 --> 00:06:02.614
+Syntax error, bad input on line one.
+
+90
+00:06:02.614 --> 00:06:04.030
+[SOUND].
+
+91
+00:06:04.030 --> 00:06:08.170
+Quote, you know, and then quote down here
+on the next line.
+
+92
+00:06:09.290 --> 00:06:15.180
+Kay, so it tells us there's a syntax error
+where it is roughly, on what line.
+
+93
+00:06:15.180 --> 00:06:19.084
+Okay, and the fact that, well, it's trying
+to tell us here that it's
+
+94
+00:06:19.084 --> 00:06:23.690
+it's at the end of the line, where, where
+it's encountering a new line.
+
+95
+00:06:23.690 --> 00:06:27.250
+Kay, and so here it's just kind of giving
+us a new line there.
+
+96
+00:06:27.250 --> 00:06:29.150
+Kay, so that is hinting that
+
+97
+00:06:29.150 --> 00:06:31.510
+it must be at the end of the line here.
+
+98
+00:06:31.510 --> 00:06:34.670
+And in fact we forgot to put the colon on
+here.
+
+99
+00:06:34.670 --> 00:06:39.800
+Remember, every function header begins or,
+ends with a colon.
+
+100
+00:06:39.800 --> 00:06:45.050
+Just like a every if here ends with a
+colon, else ends with a
+
+101
+00:06:45.050 --> 00:06:49.870
+colon, anytime that you're going to start
+a block of code, kay, so, fix that.
+
+102
+00:06:49.870 --> 00:06:52.140
+Let's see it run now.
+
+103
+00:06:52.140 --> 00:06:54.130
+Oh, another syntax error.
+
+104
+00:06:54.130 --> 00:07:00.849
+Bad input on line two now.
+Okay, we have if x is equal to Mary
+
+105
+00:07:02.960 --> 00:07:07.690
+there's something wrong with the equals.
+What's wrong with the equals, hmm?
+
+106
+00:07:07.690 --> 00:07:15.890
+Let's go back to the documentation here.
+And we could, let's try comparing things.
+
+107
+00:07:15.890 --> 00:07:18.650
+Let's see, where would I find something
+about comparing?
+
+108
+00:07:18.650 --> 00:07:22.185
+So, compare, oh, comparison operators
+there.
+
+109
+00:07:23.560 --> 00:07:24.530
+let's see.
+
+110
+00:07:24.530 --> 00:07:28.470
+Oh, the comparison here is double equals
+not single
+
+111
+00:07:28.470 --> 00:07:33.790
+equals kay, very common mistake.
+Single equals is assigning a variable,
+
+112
+00:07:33.790 --> 00:07:38.744
+double equals is comparing two things.
+Okay, so
+
+113
+00:07:38.744 --> 00:07:44.325
+let's try this again here.
+Oh, name error, name Mary is not defined.
+
+114
+00:07:44.325 --> 00:07:48.440
+Oh, kay, yeah, down here I gave it.
+
+115
+00:07:48.440 --> 00:07:52.540
+Well, Mary is not defined, I, I meant to
+pass in just a string.
+
+116
+00:07:52.540 --> 00:07:53.220
+Okay?
+
+117
+00:07:53.220 --> 00:07:59.670
+Here, note that note the color, okay?
+Well this is kind of useful here.
+
+118
+00:07:59.670 --> 00:08:02.620
+So, in this code here where we have
+
+119
+00:08:02.620 --> 00:08:07.010
+some strings, note the strings are
+color-coded red.
+
+120
+00:08:07.010 --> 00:08:09.300
+And this is not color-coded red.
+
+121
+00:08:09.300 --> 00:08:11.902
+It's just black like any other name.
+
+122
+00:08:11.902 --> 00:08:16.790
+And well, notice over here we actually
+have purple stuff too, for keywords.
+
+123
+00:08:16.790 --> 00:08:18.560
+Kay.
+Notice when you're typing,
+
+124
+00:08:18.560 --> 00:08:22.090
+whether things are turning up the color
+that you wanted.
+
+125
+00:08:22.090 --> 00:08:28.970
+Kay, and so here, basically just another
+kind of syntax error.
+
+126
+00:08:28.970 --> 00:08:34.390
+I meant to give a, meant to give it a, a
+string instead of a variable name.
+
+127
+00:08:34.390 --> 00:08:36.660
+So let's see if I'm good now.
+
+128
+00:08:36.660 --> 00:08:37.810
+Oh, good.
+
+129
+00:08:37.810 --> 00:08:41.380
+You know, it found Mary and then Fred,
+well, is clearly not Mary.
+
+130
+00:08:41.380 --> 00:08:43.060
+So, fixed it.
+
+131
+00:08:45.650 --> 00:08:49.510
+So let's turn to the issues of code style
+and readability now.
+
+132
+00:08:49.510 --> 00:08:53.460
+So, just trust me and that this code
+actually works.
+
+133
+00:08:54.600 --> 00:08:59.040
+So, we have some code, what does it do?
+
+134
+00:08:59.040 --> 00:09:04.360
+Def area a, b, c and some math here.
+
+135
+00:09:04.360 --> 00:09:07.360
+Not really clear, you might not know this
+formula.
+
+136
+00:09:09.180 --> 00:09:10.750
+You know, if somebody else is looking at
+this
+
+137
+00:09:10.750 --> 00:09:15.140
+code after you've written it, they don't
+know what you meant probably.
+
+138
+00:09:15.140 --> 00:09:17.200
+In fact if you're looking at this a month
+
+139
+00:09:17.200 --> 00:09:20.000
+after you wrote it, you might not remember
+either.
+
+140
+00:09:21.080 --> 00:09:23.410
+So, what should we have done?
+
+141
+00:09:23.410 --> 00:09:27.240
+We need to provide more information to
+actually explain what's going on here.
+
+142
+00:09:27.240 --> 00:09:30.190
+The first thing is what is this supposed
+to be doing?
+
+143
+00:09:30.190 --> 00:09:31.380
+Kay, let's make that clear.
+
+144
+00:09:32.410 --> 00:09:36.060
+So, this is actually supposed to calculate
+the area of a triangle.
+
+145
+00:09:37.240 --> 00:09:44.675
+Kay, so let's give it a more useful name.
+Area of a triangle and I'm going to
+
+146
+00:09:44.675 --> 00:09:52.120
+call it area triangle_sss to be sure that
+it's taking three sides, okay?
+
+147
+00:09:52.120 --> 00:09:59.600
+And so well, no matter how long a name
+should, can be you don't want to make it
+
+148
+00:09:59.600 --> 00:10:02.630
+too long, it gets just kind of unwieldy.
+You can provide
+
+149
+00:10:02.630 --> 00:10:08.490
+more information in what Python calls a
+documentation string, or a doc string.
+
+150
+00:10:08.490 --> 00:10:12.800
+And in Python, that traditionally goes
+right here, right
+
+151
+00:10:12.800 --> 00:10:17.930
+after the function header, and it's put in
+a string.
+
+152
+00:10:17.930 --> 00:10:18.740
+Kay?
+
+153
+00:10:18.740 --> 00:10:20.470
+Even though this is just a string, we
+
+154
+00:10:20.470 --> 00:10:24.356
+traditionally put it in three quotes,
+three double quotes.
+
+155
+00:10:24.356 --> 00:10:27.748
+what the three double quotes allows is
+that, it allows a string
+
+156
+00:10:27.748 --> 00:10:30.790
+to go over multiple lines.
+Kay?
+
+157
+00:10:30.790 --> 00:10:33.730
+Now, once you go into a document string,
+you should talk
+
+158
+00:10:33.730 --> 00:10:37.940
+about what are the inputs what's the
+output and how those relate.
+
+159
+00:10:37.940 --> 00:10:42.350
+So, here we could say for example,
+
+160
+00:10:42.350 --> 00:10:47.789
+that this returns the area of a triangle
+
+161
+00:10:47.789 --> 00:10:53.030
+given the lengths of its three sides.
+Kay?
+
+162
+00:10:56.480 --> 00:11:00.300
+Now, the documentation string tells you
+what it does, it
+
+163
+00:11:00.300 --> 00:11:03.870
+does not tell you how it actually does
+that, kay?
+
+164
+00:11:03.870 --> 00:11:05.490
+So we've got some weird math here.
+
+165
+00:11:05.490 --> 00:11:08.080
+You might recognize it, you might not,
+kay?
+
+166
+00:11:08.080 --> 00:11:12.050
+It's actually a standard formula known as
+Heron's formula.
+
+167
+00:11:12.050 --> 00:11:14.940
+Kay.
+So, I'm going to write that down.
+
+168
+00:11:14.940 --> 00:11:18.348
+You know, somebody can look up Heron's
+formula and
+
+169
+00:11:18.348 --> 00:11:22.112
+say aha, you actually typed in Heron's
+formula correctly.
+
+170
+00:11:22.112 --> 00:11:25.210
+Kay?
+Well, I'm going to put this in a comment.
+
+171
+00:11:25.210 --> 00:11:28.434
+A comment starts with one of those hash
+lines or pound signs.
+
+172
+00:11:29.950 --> 00:11:30.280
+Kay.
+
+173
+00:11:30.280 --> 00:11:32.120
+And note that I'm not putting this
+
+174
+00:11:32.120 --> 00:11:35.590
+in the documentation string, kay, this is
+different.
+
+175
+00:11:35.590 --> 00:11:39.190
+This is telling somebody, how I'm
+calculating
+
+176
+00:11:39.190 --> 00:11:42.825
+this, as opposed to what I'm actually
+calculating.
+
+177
+00:11:42.825 --> 00:11:46.900
+Kay, so that's already better.
+Somebody could understand,
+
+178
+00:11:46.900 --> 00:11:50.110
+given the English and the better name,
+what's going on.
+
+179
+00:11:50.110 --> 00:11:52.880
+But still let's, let's improve this here.
+
+180
+00:11:52.880 --> 00:11:56.000
+A, b, c, you know, those are kind of poor
+names.
+
+181
+00:11:56.000 --> 00:11:56.830
+What are those supposed to be?
+
+182
+00:11:56.830 --> 00:12:00.150
+They're supposed to be sides, but let's
+make this clear.
+
+183
+00:12:00.150 --> 00:12:02.830
+Let's rename them side one.
+
+184
+00:12:04.920 --> 00:12:08.150
+And I'm going to add in some space that is
+for readability, too.
+
+185
+00:12:08.150 --> 00:12:15.134
+Side two and side three and be
+
+186
+00:12:15.134 --> 00:12:22.729
+sure to do that consistently.
+
+187
+00:12:22.729 --> 00:12:24.673
+[SOUND].
+
+188
+00:12:24.673 --> 00:12:32.085
+Alright, and similarly S, well that,
+
+189
+00:12:32.085 --> 00:12:39.300
+that's kind of a weird name.
+What is that?
+
+190
+00:12:39.300 --> 00:12:41.243
+Well if you add up the three sides of
+
+191
+00:12:41.243 --> 00:12:44.335
+a triangle and divide it by two, what is
+that?
+
+192
+00:12:44.335 --> 00:12:46.680
+Kay, adding up the three sides, that's the
+perimeter.
+
+193
+00:12:46.680 --> 00:12:49.110
+Divide by two, that's half of a perimeter.
+
+194
+00:12:49.110 --> 00:12:49.810
+In other words
+
+195
+00:12:49.810 --> 00:12:51.530
+it's the semi-perimeter.
+
+196
+00:12:51.530 --> 00:12:54.590
+Kay, so that's why it's traditionally
+called s.
+
+197
+00:12:54.590 --> 00:12:57.430
+Let's actually give it a longer name
+called semi_perin.
+
+198
+00:12:57.430 --> 00:13:02.810
+Let, you know, more descriptive.
+Add a couple more spaces
+
+199
+00:13:02.810 --> 00:13:08.390
+in here for readability and rename
+consistently here, kay.
+
+200
+00:13:12.390 --> 00:13:15.105
+Be sure of the consistency.
+
+201
+00:13:15.105 --> 00:13:16.282
+[SOUND].
+
+202
+00:13:16.282 --> 00:13:21.682
+Now one thing you can see that's not
+
+203
+00:13:21.682 --> 00:13:26.902
+very readable is now I have a really
+
+204
+00:13:26.902 --> 00:13:31.942
+long piece of code, a really long
+
+205
+00:13:31.942 --> 00:13:36.874
+line.
+Well you can break that up,
+
+206
+00:13:36.874 --> 00:13:42.070
+kay.
+Notice the indentation.
+
+207
+00:13:42.070 --> 00:13:45.250
+So, I have the one formula within the
+square
+
+208
+00:13:45.250 --> 00:13:47.070
+root that's broken up on four lines so
+it's
+
+209
+00:13:47.070 --> 00:13:49.420
+more readable and, and in fact they stack
+on
+
+210
+00:13:49.420 --> 00:13:51.790
+top of each other, four things that I'm
+multiplying.
+
+211
+00:13:51.790 --> 00:13:55.500
+So, this is definitely a much more
+readable version
+
+212
+00:13:55.500 --> 00:13:58.900
+and somebody could read this and
+understand what's going on.
+
+213
+00:14:02.160 --> 00:14:05.900
+So, this little program here is supposed
+to tell us,
+
+214
+00:14:05.900 --> 00:14:08.610
+you know, what is the favorite thing of
+our various instructors.
+
+215
+00:14:08.610 --> 00:14:11.760
+So, Joe loves games, that's this course.
+
+216
+00:14:11.760 --> 00:14:14.880
+Scott loves ties, as you should be seeing
+from his videos.
+
+217
+00:14:14.880 --> 00:14:19.300
+And I love the outdoors but, well, I'm
+here in front of a computer all the time.
+
+218
+00:14:19.300 --> 00:14:22.090
+So, well, let's run it.
+
+219
+00:14:22.090 --> 00:14:24.410
+And, well, it reports that I love the
+outdoors.
+
+220
+00:14:24.410 --> 00:14:27.045
+But, hm, Jeannie, my wife,
+
+221
+00:14:27.045 --> 00:14:32.300
+who's not an instructor and none.
+Where's that none coming from?
+
+222
+00:14:32.300 --> 00:14:37.110
+Well, first of all you know, note that
+because Jeannie is not
+
+223
+00:14:37.110 --> 00:14:42.190
+one of these options, it doesn't meet one
+of these branches here.
+
+224
+00:14:42.190 --> 00:14:46.320
+It just falls through and at the end of
+the function there's nothing left to do,
+
+225
+00:14:46.320 --> 00:14:53.020
+so it just returns a special value called
+none which signifies that there's
+
+226
+00:14:53.020 --> 00:14:55.630
+no value there.
+Kay?
+
+227
+00:14:55.630 --> 00:14:57.074
+Now that seems kind of strange, and in
+
+228
+00:14:57.074 --> 00:14:59.380
+particular in a larger program, if this
+was just
+
+229
+00:14:59.380 --> 00:15:02.760
+a piece of some larger thing you'd
+probably have
+
+230
+00:15:02.760 --> 00:15:05.265
+a hard time tracking down where the
+problem was.
+
+231
+00:15:05.265 --> 00:15:10.170
+Kay, so we'd like to have some way of
+saying, hey something's wrong
+
+232
+00:15:10.170 --> 00:15:16.030
+here, you gave me a valid, an invalid
+input that I wasn't expecting.
+
+233
+00:15:16.030 --> 00:15:18.370
+and so here is one really simple
+
+234
+00:15:18.370 --> 00:15:23.700
+way of doing it.
+Just make sure that each of your ifs has
+
+235
+00:15:23.700 --> 00:15:28.855
+an else case, kay?
+Else, kay, some other inner
+
+236
+00:15:28.855 --> 00:15:33.623
+value of instructors here let's
+
+237
+00:15:33.623 --> 00:15:37.944
+print out a message you know,
+
+238
+00:15:37.944 --> 00:15:44.050
+favorites, saw invalid instructor.
+
+239
+00:15:44.050 --> 00:15:47.780
+and here's our value Jeannie.
+Whoops, instructor.
+
+240
+00:15:50.950 --> 00:15:56.440
+And so we can run that, and it gives us
+this message saying, hey, this function
+
+241
+00:15:56.440 --> 00:16:02.490
+saw an invalid input, you know, now I know
+where to look, and where the problem was.

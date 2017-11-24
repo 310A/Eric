@@ -1,4 +1,11 @@
-{'hello': 'Welcome to Atmatrix community!👏👏Please speak CHINESE or ENGLISH✔️ & Do not forget to read other Rules at Pinned Message',
-                'Is there any news about development progress?': 'Sure.You can find it at https://github.com/atmatrix',
-                'development progress': 'Sure.You can find it at https://github.com/atmatrix',
-                '雷电网络': '雷电网络，打通区块链与人工智能世界的“雷神之锤 https://mp.weixin.qq.com/s/Pc8KMJOzQ5RFiLhwhIdMyg'}
+{'Greet': 'Hello, 我是墨墨，请多指教😳',
+                'DevelopmentProgress': 'Our demo is coming soon, also you can find some other progress at our official website https://t.me/Atmatrix or github  https://github.com/atmatrix',
+                '雷电网络': '雷电网络，打通区块链与人工智能世界的“雷神之锤 https://mp.weixin.qq.com/s/Pc8KMJOzQ5RFiLhwhIdMyg',
+                '墨墨': '墨墨在呢',
+                'momo': 'I am here',
+                'ATT on EtherDelta': 'EtherDelta is a decentralized exchange that anybody can trade any ERC20 token on it.',
+                '内盘ATT的购买、提币相关': '现在充值不可以。提现应该是可以的。但是提出来他如果在以德没有卖掉、是不能再充回内盘的。这个就不属于退币、是找我们授权的负责方进行提现业务、和官方没有什么关系。如果要提现让他联系流程中的qq进行确认后进行。任何问题可以咨询对方',
+                'Can you achieve your plan in whitepaper on time?': 'There may be a little delay affected by national policy, but our developers are working on it, we will try our best to release it on time.',
+                'Is there any bounty program': 'Thanks for your support! If there is any news about it we’ll post it on our website, please pay attention to https://t.me/Atmatrix',
+                'Where will Atmatrix be listed next': 'Because nobody applied to list in there',
+                'bad language': '这么粗鲁，不理你了！'}

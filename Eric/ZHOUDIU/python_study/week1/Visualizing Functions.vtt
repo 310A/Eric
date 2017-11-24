@@ -1,0 +1,892 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.312
+[MUSIC]
+
+2
+00:00:07.312 --> 00:00:11.266
+In this video I'm going to introduce
+CodeSkulptor's Viz mode which
+
+3
+00:00:11.266 --> 00:00:15.870
+visualizes what is actually happening
+when Python is running your program.
+
+4
+00:00:16.960 --> 00:00:20.500
+Now using this has two advantages for you.
+
+5
+00:00:20.500 --> 00:00:27.250
+First of all you can use it help learn and
+understand what's going on in Python.
+
+6
+00:00:27.250 --> 00:00:32.230
+Second of all you can use it
+to help de-bug your programs.
+
+7
+00:00:32.230 --> 00:00:34.110
+So how do you start mode?
+
+8
+00:00:34.110 --> 00:00:35.590
+Well, pretty easy.
+
+9
+00:00:35.590 --> 00:00:38.780
+We've got a big button exactly for
+that right here.
+
+10
+00:00:38.780 --> 00:00:45.830
+So clicking on Viz Mode opens up a new
+window or a new tab in Viz Mode here.
+
+11
+00:00:45.830 --> 00:00:48.280
+And you'll see that it is Viz Mode,
+
+12
+00:00:48.280 --> 00:00:51.210
+because we have an extra button that
+we'll explain in a little while.
+
+13
+00:00:52.470 --> 00:00:55.810
+It has a diff,
+different sample program here.
+
+14
+00:00:55.810 --> 00:01:00.975
+The Demos button has changed to a tutorial
+button which is well a tutorial on
+
+15
+00:01:00.975 --> 00:01:02.590
+Vizmode, 'kay?
+
+16
+00:01:02.590 --> 00:01:03.430
+Check that out too.
+
+17
+00:01:05.070 --> 00:01:07.980
+Well, we've got a sample program.
+
+18
+00:01:07.980 --> 00:01:11.600
+How are we going to use this
+mode on our own program?
+
+19
+00:01:11.600 --> 00:01:14.860
+How do you get your own code
+into the vismode window?
+
+20
+00:01:16.640 --> 00:01:19.800
+Well, we've got our
+trustee load button here.
+
+21
+00:01:19.800 --> 00:01:24.140
+You can load a local file
+just like you could before.
+
+22
+00:01:25.750 --> 00:01:29.990
+Or well, we're actually going to
+encourage you to develop all your
+
+23
+00:01:29.990 --> 00:01:33.910
+programs in the regular code
+sculpture window and not in vismode.
+
+24
+00:01:34.990 --> 00:01:38.880
+Well, why, well one reason is simply that
+this mode's slower because going to be
+
+25
+00:01:38.880 --> 00:01:42.280
+doing a lot more stuff.
+
+26
+00:01:42.280 --> 00:01:46.740
+So, well, how can you get your code
+from the code sculptor window,
+
+27
+00:01:46.740 --> 00:01:49.070
+well we're just going to copy and paste.
+
+28
+00:01:49.070 --> 00:01:54.040
+And, well, I'll go ahead and
+just delete everything here.
+
+29
+00:01:54.040 --> 00:01:57.600
+I could Ctrl+A and backspace.
+
+30
+00:01:57.600 --> 00:01:59.470
+My codes gone here.
+
+31
+00:01:59.470 --> 00:02:03.830
+Going to go to another window where I
+happen to have some code that I like.
+
+32
+00:02:03.830 --> 00:02:06.825
+And Ctrl+A to select all that.
+
+33
+00:02:06.825 --> 00:02:13.500
+Ctrl+C to copy and
+then back here, Ctrl+D to paste.
+
+34
+00:02:13.500 --> 00:02:16.860
+Well those were all the Windows shortcuts.
+
+35
+00:02:16.860 --> 00:02:18.296
+If you're on a Mac.
+
+36
+00:02:18.296 --> 00:02:25.280
+You'll need Cmd+A to select everything and
+the appropriate other shortcuts for a Mac.
+
+37
+00:02:25.280 --> 00:02:30.470
+Similarly if you're using LINUX,
+use the appropriate shortcuts for LINUX.
+
+38
+00:02:30.470 --> 00:02:34.530
+So we have our code in our Viz mode.
+
+39
+00:02:34.530 --> 00:02:38.740
+Okay you can see we're in biz mode
+because we have this button here and
+
+40
+00:02:38.740 --> 00:02:41.020
+the tutorial button over here.
+
+41
+00:02:41.020 --> 00:02:46.520
+And, next we're going to look at what does
+biz mode actually do and how do we do it.
+
+42
+00:02:48.690 --> 00:02:53.780
+So we're going to use the same example
+as Scott used in a previous video and
+
+43
+00:02:53.780 --> 00:02:56.739
+we can run our code and get some results.
+
+44
+00:02:57.790 --> 00:03:02.170
+But for Viz mode what we do is we click
+on the little wrench button here.
+
+45
+00:03:03.270 --> 00:03:06.290
+That divides the console
+window into two parts.
+
+46
+00:03:06.290 --> 00:03:08.310
+The upper part being our console and
+
+47
+00:03:08.310 --> 00:03:12.920
+then, and
+the visualization will be down here below.
+
+48
+00:03:12.920 --> 00:03:16.600
+No once we're in Viz mode we
+need to run our code again.
+
+49
+00:03:16.600 --> 00:03:20.443
+What happens underneath the hood is
+Viz mode runs our entire program.
+
+50
+00:03:20.443 --> 00:03:24.359
+But it remembers every single
+step that happened and
+
+51
+00:03:24.359 --> 00:03:27.389
+now we can go and review all those steps.
+
+52
+00:03:29.520 --> 00:03:34.420
+So now that we've run our code
+in ghost mode, the fun begins.
+
+53
+00:03:34.420 --> 00:03:38.610
+That we can now step
+through our code forward or
+
+54
+00:03:38.610 --> 00:03:43.860
+backwards in single lines and
+bigger steps, okay?
+
+55
+00:03:43.860 --> 00:03:45.640
+To see what is actually going on.
+
+56
+00:03:45.640 --> 00:03:48.690
+And we can see what happens
+at each particular step.
+
+57
+00:03:48.690 --> 00:03:50.090
+And what's defined, what's not defined.
+
+58
+00:03:51.100 --> 00:03:51.890
+Okay.
+
+59
+00:03:51.890 --> 00:03:55.850
+So, to start off, well you can start at
+
+60
+00:03:55.850 --> 00:04:00.660
+any of the blue lines over here
+that indicate events, okay.
+
+61
+00:04:00.660 --> 00:04:04.160
+And at least, so far, the only two
+events that we have are starting and
+
+62
+00:04:04.160 --> 00:04:04.780
+ending our codes.
+
+63
+00:04:04.780 --> 00:04:09.120
+So I'm just going to click on begins
+to start at the beginning, okay?
+
+64
+00:04:09.120 --> 00:04:14.720
+So, I'm going to be stepping in this
+section just one line at a time.
+
+65
+00:04:14.720 --> 00:04:19.260
+We're about to do this body line of code,
+which is defined triangular area.
+
+66
+00:04:19.260 --> 00:04:23.766
+So, I click on it, and
+redefine triangular area over here.
+
+67
+00:04:23.766 --> 00:04:27.790
+That shows us that triangular
+area is defined as an object,
+
+68
+00:04:27.790 --> 00:04:29.967
+the function triangular area.
+
+69
+00:04:29.967 --> 00:04:33.070
+But it doesn't bother
+showing the code over here.
+
+70
+00:04:33.070 --> 00:04:33.830
+Okay.
+
+71
+00:04:33.830 --> 00:04:37.270
+Now, in particular this is
+a global definition, so
+
+72
+00:04:37.270 --> 00:04:39.400
+it's in what's called the global frame.
+
+73
+00:04:39.400 --> 00:04:42.520
+More about frames in a minute.
+
+74
+00:04:42.520 --> 00:04:48.320
+So next we're going to
+run this line up to that.
+
+75
+00:04:48.320 --> 00:04:50.420
+Well, we're calling
+the function triangle area,
+
+76
+00:04:50.420 --> 00:04:53.970
+so we're going to go
+back into this function.
+
+77
+00:04:53.970 --> 00:04:54.930
+Okay.
+
+78
+00:04:54.930 --> 00:04:58.920
+In particular here, we're passing in
+three and eight as base and height.
+
+79
+00:04:59.920 --> 00:05:00.530
+Okay.
+
+80
+00:05:00.530 --> 00:05:04.690
+Base and height are only defined
+in the function triangle area so
+
+81
+00:05:04.690 --> 00:05:07.200
+we have new frame for triangle area.
+
+82
+00:05:08.780 --> 00:05:11.540
+And we defined area.
+
+83
+00:05:12.570 --> 00:05:18.103
+Computes that value, we're going to
+next compute the return value and
+
+84
+00:05:18.103 --> 00:05:22.788
+return the, and the, and
+assign it to a1 as a global value a1.
+
+85
+00:05:22.788 --> 00:05:24.999
+Okay, all right.
+
+86
+00:05:24.999 --> 00:05:31.970
+Similarly, well next we're going to print,
+and result is shown up here [INAUDIBLE].
+
+87
+00:05:31.970 --> 00:05:34.420
+next, we're going to do
+just the same thing,
+
+88
+00:05:34.420 --> 00:05:36.280
+with different values for triangular.
+
+89
+00:05:36.280 --> 00:05:44.060
+We created a frame with the local values
+to compute the what is in the body.
+
+90
+00:05:44.060 --> 00:05:47.100
+Compute the return value,
+and return that, okay?
+
+91
+00:05:49.100 --> 00:05:50.190
+Through this, okay?
+
+92
+00:05:50.190 --> 00:05:51.090
+We've got frames.
+
+93
+00:05:51.090 --> 00:05:52.809
+The global frames, local frames.
+
+94
+00:05:54.200 --> 00:06:00.080
+These each frame maps the variables
+in that frame to their definitions,
+
+95
+00:06:00.080 --> 00:06:05.035
+whether it be some sort of object or
+some simple value, okay?
+
+96
+00:06:05.035 --> 00:06:12.690
+And, we're going to see more about frames,
+as we execute this program.
+
+97
+00:06:12.690 --> 00:06:17.540
+As in the side, the term frame,
+also has another meaning in Code Sculptor,
+
+98
+00:06:17.540 --> 00:06:22.110
+that refers to popping up new windows and
+drawing things, okay?
+
+99
+00:06:22.110 --> 00:06:24.400
+We're not talking about
+that use of a frame.
+
+100
+00:06:24.400 --> 00:06:29.260
+Okay, this is,
+a frame is a mapping between variables and
+
+101
+00:06:29.260 --> 00:06:29.990
+their definitions, okay.
+
+102
+00:06:32.220 --> 00:06:33.560
+So next, well,
+
+103
+00:06:33.560 --> 00:06:39.050
+first let me show you, okay, we can
+actually step backwards from things.
+
+104
+00:06:39.050 --> 00:06:40.920
+And okay, that's kind of cute.
+
+105
+00:06:42.430 --> 00:06:43.070
+not.
+
+106
+00:06:43.070 --> 00:06:49.140
+Frequent, as frequently useful, but,
+in combination with other things,
+
+107
+00:06:49.140 --> 00:06:54.120
+we'll see examples where it's
+useful to step backwards, okay.
+
+108
+00:06:54.120 --> 00:06:58.794
+But let's go back forward where we were,
+we defined fahrenheit to celsius.
+
+109
+00:06:58.794 --> 00:07:01.570
+Okay, we call it a couple times, so
+
+110
+00:07:01.570 --> 00:07:05.030
+I'm going to skip through
+here a little more quickly.
+
+111
+00:07:05.030 --> 00:07:09.020
+Okay, it's using local frames once again.
+
+112
+00:07:09.020 --> 00:07:12.510
+Okay and now I'm going to
+slow down on this example.
+
+113
+00:07:12.510 --> 00:07:17.400
+We're going to define
+fahrenheit to colvian Kelvin?
+
+114
+00:07:17.400 --> 00:07:20.240
+Note that we now have
+three global functions.
+
+115
+00:07:20.240 --> 00:07:23.020
+We have several other
+variables defined globally.
+
+116
+00:07:24.050 --> 00:07:27.330
+And we're going to run these examples now.
+
+117
+00:07:27.330 --> 00:07:28.460
+So we have k1.
+
+118
+00:07:28.460 --> 00:07:31.050
+Oh, we,
+we're going to call another function.
+
+119
+00:07:31.050 --> 00:07:32.640
+So, what do we do?
+
+120
+00:07:32.640 --> 00:07:35.520
+We call that function
+in its own local frame.
+
+121
+00:07:37.340 --> 00:07:39.980
+Fahrenheit, the value passed in.
+
+122
+00:07:39.980 --> 00:07:42.860
+Happens to be 32 for this example.
+
+123
+00:07:42.860 --> 00:07:48.120
+'Kay we do some local computation, oh,
+but we're calling another function.
+
+124
+00:07:48.120 --> 00:07:53.204
+So we are going to create yet
+another frame, okay.
+
+125
+00:07:53.204 --> 00:07:57.610
+So this frame says well we're
+computing Fahrenheit to Celsius and
+
+126
+00:07:57.610 --> 00:08:02.600
+we're using that function with
+the local value of Fahrenheit being 32.
+
+127
+00:08:02.600 --> 00:08:07.300
+And when we're done with that, we need
+to go back to Fahrenheit to Kelvin,
+
+128
+00:08:07.300 --> 00:08:08.930
+and do some computation.
+
+129
+00:08:08.930 --> 00:08:11.720
+And when we're done with that,
+we'll go back to the global.
+
+130
+00:08:13.640 --> 00:08:14.450
+Okay.
+So, and
+
+131
+00:08:14.450 --> 00:08:19.580
+notice further more that we have two
+different variables each named fahrenheit.
+
+132
+00:08:19.580 --> 00:08:20.410
+In this example,
+
+133
+00:08:20.410 --> 00:08:25.370
+they happen to have the same value,
+but that's not necessarily the case.
+
+134
+00:08:25.370 --> 00:08:28.970
+We actually have Fahrenheit
+to Celsius has a local,
+
+135
+00:08:30.570 --> 00:08:34.840
+variable, Fahrenheit,
+as does Fahrenheit to Kelvin.
+
+136
+00:08:36.040 --> 00:08:38.330
+Well, furthermore as
+we've stepped once more,
+
+137
+00:08:38.330 --> 00:08:40.670
+we have a local variable celsius here.
+
+138
+00:08:41.940 --> 00:08:46.380
+We return, which now we have
+a local variable celsius here.
+
+139
+00:08:46.380 --> 00:08:50.640
+Notice that those two different versions
+of celsius didn't exist at the same time.
+
+140
+00:08:52.120 --> 00:08:56.750
+And we continue on as
+with previous examples.
+
+141
+00:08:56.750 --> 00:09:00.670
+And we could continue on until the end.
+
+142
+00:09:00.670 --> 00:09:01.300
+Okay.
+
+143
+00:09:01.300 --> 00:09:05.530
+So we're somewhere in the middle
+of executing our program and
+
+144
+00:09:05.530 --> 00:09:07.700
+during the visualization.
+
+145
+00:09:07.700 --> 00:09:09.580
+What are these buttons for?
+
+146
+00:09:09.580 --> 00:09:14.675
+Well, so,
+single stepping can get really tedious.
+
+147
+00:09:14.675 --> 00:09:17.975
+'Kay?
+We'd like to go in bigger steps.
+
+148
+00:09:17.975 --> 00:09:19.800
+'Kay.
+Skip over the little details that
+
+149
+00:09:19.800 --> 00:09:20.790
+we're not interested in.
+
+150
+00:09:22.440 --> 00:09:27.580
+Okay, well so, first of all if you just
+highlight this it says previous break
+
+151
+00:09:27.580 --> 00:09:32.260
+point or previous event,
+well I'm just going to go up to the top.
+
+152
+00:09:32.260 --> 00:09:35.300
+Okay, that's the previous event,
+we don't have any break points,
+
+153
+00:09:35.300 --> 00:09:37.880
+we're going to see what
+those are in just a second.
+
+154
+00:09:37.880 --> 00:09:42.090
+So, the previous event was just the
+beginning and went all the way back there.
+
+155
+00:09:42.090 --> 00:09:44.475
+Okay, similarly I can skip
+all the way to the end.
+
+156
+00:09:44.475 --> 00:09:45.537
+And then back.
+
+157
+00:09:45.537 --> 00:09:50.465
+'Kay those are the events that
+we have right in this program.
+
+158
+00:09:50.465 --> 00:09:54.860
+'Kay, as we just saw
+the interesting thing in
+
+159
+00:09:54.860 --> 00:09:59.730
+the code here is when we start calling
+functions within the functions.
+
+160
+00:09:59.730 --> 00:10:03.340
+So maybe I just want
+to skip ahead to that.
+
+161
+00:10:03.340 --> 00:10:06.720
+Okay, so I want to skip ahead
+to right here, line 28.
+
+162
+00:10:06.720 --> 00:10:09.300
+Where I call farenheit to kelvin for
+the first time.
+
+163
+00:10:09.300 --> 00:10:11.390
+So I can click on line 28,
+
+164
+00:10:11.390 --> 00:10:16.530
+right on the number here and
+it's highlighted in red, okay.
+
+165
+00:10:16.530 --> 00:10:21.970
+I put in a break point
+that if I skip ahead.
+
+166
+00:10:23.190 --> 00:10:26.010
+It's going to go to that point.
+
+167
+00:10:26.010 --> 00:10:28.360
+Now I can single step through there.
+
+168
+00:10:28.360 --> 00:10:33.270
+Just as we did before or back, backstep.
+
+169
+00:10:33.270 --> 00:10:39.390
+And if I wanted I could also create
+more break points as many as I want.
+
+170
+00:10:41.890 --> 00:10:44.760
+Finally, once you're done
+stepping through your code and
+
+171
+00:10:44.760 --> 00:10:50.490
+seeing what's happening, you can click on
+the wrench again and get out of this mode.
+
+172
+00:10:50.490 --> 00:10:54.530
+And then you can run your program just
+as normal without actually stepping
+
+173
+00:10:54.530 --> 00:10:55.270
+through everything.
+
+174
+00:10:57.390 --> 00:11:01.200
+Here's a quick example for
+using a Vizmode for
+
+175
+00:11:01.200 --> 00:11:04.570
+debugging purposes,
+understanding your errors better.
+
+176
+00:11:04.570 --> 00:11:09.410
+So I run my program which uses
+the quadratic equation here,
+
+177
+00:11:09.410 --> 00:11:12.020
+and it gives me an error.
+
+178
+00:11:12.020 --> 00:11:13.140
+I look at this and
+
+179
+00:11:13.140 --> 00:11:17.860
+I'm really confused I've, I've looked
+at this formula a number of times.
+
+180
+00:11:17.860 --> 00:11:19.590
+It's correct.
+
+181
+00:11:19.590 --> 00:11:24.570
+I'm dividing by two times a, but a is one,
+so why is this giving me an error?
+
+182
+00:11:24.570 --> 00:11:25.320
+I don't know.
+
+183
+00:11:25.320 --> 00:11:28.440
+Let me put it into VisMode and
+run it there.
+
+184
+00:11:29.690 --> 00:11:36.070
+I'm at the end, where I've encountered my
+error, and I can back it up one step 'Kay,
+
+185
+00:11:36.070 --> 00:11:38.880
+and I can back it up
+more steps if I wanted.
+
+186
+00:11:38.880 --> 00:11:46.100
+BUt, in this case, I see here that the
+values and roots are not what I expected.
+
+187
+00:11:46.100 --> 00:11:50.690
+I thought a was one,
+b was zero, c was negative one.
+
+188
+00:11:50.690 --> 00:11:54.090
+But, they're not what I expected.
+
+189
+00:11:54.090 --> 00:11:56.454
+And, and, so I can realize,
+
+190
+00:11:56.454 --> 00:12:02.424
+oh [LAUGH] I actually passed the values
+int my function incorrectly, here.
+
+191
+00:12:04.134 --> 00:12:07.418
+And so once I fix that,
+I can re-run my program, and
+
+192
+00:12:07.418 --> 00:12:10.420
+it runs correctly,
+gives me the right answer.

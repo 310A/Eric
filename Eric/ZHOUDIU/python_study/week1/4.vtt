@@ -1,0 +1,761 @@
+WEBVTT
+
+1
+00:00:00.617 --> 00:00:06.942
+In this video we're gonna talk about some
+of the basic math that we need for this
+
+2
+00:00:06.942 --> 00:00:11.571
+part of the course.
+Don't worry, it's not gonna get too heavy
+
+3
+00:00:11.571 --> 00:00:16.740
+and we're gonna keep it simple.
+So with that, let's just get started.
+
+4
+00:00:17.540 --> 00:00:25.715
+First, I want to talk about logic and in
+particular I want to talk about Boolean
+
+5
+00:00:25.715 --> 00:00:31.893
+logic, where all values can either be true
+or false and there's no gray area. There
+
+6
+00:00:31.893 --> 00:00:36.025
+is no middle ground. Everything is either
+true or it's false, okay?
+
+7
+00:00:36.025 --> 00:00:40.970
+And so, as we talk about this, I want to
+have some abbreviations for obvious
+
+8
+00:00:40.970 --> 00:00:46.602
+reasons, abbreviate these as H and Z. So
+as we go on I don't have to write out true
+
+9
+00:00:46.602 --> 00:00:49.830
+or false.
+Okay. So now, all right, I hope at least
+
+10
+00:00:49.830 --> 00:00:54.225
+some of you are paying attention out there
+behind your computer.
+
+11
+00:00:54.225 --> 00:00:59.926
+There is no possible logical reason why I
+would abbreviate true and false as H and
+
+12
+00:00:59.926 --> 00:01:03.934
+Z. Let's abbreviate them as T and F,
+Like normal people?
+
+13
+00:01:03.934 --> 00:01:05.640
+Alright.
+Now,
+
+14
+00:01:05.960 --> 00:01:11.484
+It's all on good to be able to have values
+that are true and false but it's not too
+
+15
+00:01:11.484 --> 00:01:14.773
+interesting unless I can combine them in
+some way.
+
+16
+00:01:14.773 --> 00:01:17.930
+So Boolean logic includes the operators
+not, and,
+
+17
+00:01:17.930 --> 00:01:20.525
+Not and an a or.
+Now, intuitively, I think you probably
+
+18
+00:01:20.525 --> 00:01:25.363
+understand these from their definition of
+the English words of not, end, and or And
+
+19
+00:01:25.363 --> 00:01:28.962
+you can just kind of work your way through
+what they neded Alright?
+
+20
+00:01:28.962 --> 00:01:31.498
+But I wanna be mathematically precise
+here.
+
+21
+00:01:31.498 --> 00:01:35.510
+So I'm gonna give you the exact definition
+of these three operators.
+
+22
+00:01:35.510 --> 00:01:39.286
+Now, if I have a variable that can take on
+a value true of false,
+
+23
+00:01:39.286 --> 00:01:40.560
+Let's call it a.
+Okay.
+
+24
+00:01:40.560 --> 00:01:45.711
+Question is what is not A and I'm going to
+draw a tree table to show you this.
+
+25
+00:01:45.711 --> 00:01:50.969
+Okay, the tree table looks like this where
+I show all the possible values of A can
+
+26
+00:01:50.969 --> 00:01:54.760
+either be true or false.
+And I'll show you the value of the
+
+27
+00:01:54.760 --> 00:01:58.674
+expression Not A over here.
+So if A is true, Not A is false.
+
+28
+00:01:58.674 --> 00:02:03.830
+If A is false then not A is true.
+Okay and that probably makes intuitive
+
+29
+00:02:03.830 --> 00:02:09.630
+sense to you or at least I hope it does.
+Okay? So let's look at and, and or now all
+
+30
+00:02:09.630 --> 00:02:13.068
+right.
+So I don't just have to have one variable
+
+31
+00:02:13.068 --> 00:02:16.720
+I can have two Boolean variables,
+Let's say A and B.
+
+32
+00:02:16.720 --> 00:02:19.800
+Then we can look at what does A and B
+mean.
+
+33
+00:01:56.500 --> 00:02:24.091
+Okay? So, I have got more combinations
+now.
+
+34
+00:02:24.091 --> 00:02:26.369
+A could be false.
+B could be false.
+
+35
+00:02:26.369 --> 00:02:31.729
+Or, A could be false and B could be true.
+Or, A could be true and B could be false.
+
+36
+00:02:31.729 --> 00:02:34.476
+Or they both could be true.
+And that's it.
+
+37
+00:02:34.476 --> 00:02:38.027
+Those are the four different combinations
+of A and B.
+
+38
+00:02:38.027 --> 00:02:42.449
+Now, going to have A and B. Intuitively,
+you think if A is true and B is true, Then
+
+39
+00:02:42.449 --> 00:02:46.000
+this also must be true.
+So, let's put a true down here.
+
+40
+00:02:46.000 --> 00:02:51.293
+Now, if either of them are false, then I
+can no longer say that both A and B are
+
+41
+00:02:51.293 --> 00:02:54.375
+true.
+Therefore the rest of these combinations
+
+42
+00:02:54.375 --> 00:02:58.775
+here are false.
+Okay and since I don't want to draw
+
+43
+00:02:58.775 --> 00:03:06.602
+another truth table let's just extend this
+one here and look at operator A or, okay
+
+44
+00:03:06.602 --> 00:03:11.100
+now, A or B.
+If they're both false, hopefully, it's
+
+45
+00:03:11.100 --> 00:03:16.510
+obvious that neither A nor B is true, so
+therefore the things going to evaluate to
+
+46
+00:03:16.510 --> 00:03:21.920
+false. But this expression is true in all
+of the cases because at least one of A or
+
+47
+00:03:21.920 --> 00:03:22.884
+B is true.
+Okay.
+
+48
+00:03:22.884 --> 00:03:26.178
+So if I have the bullion expression a and
+b, it's true.
+
+49
+00:03:26.178 --> 00:03:29.655
+If and only if both a and b are true and
+false otherwise.
+
+50
+00:03:29.655 --> 00:03:33.253
+And if I have the bullion expression A and
+or B it's false.
+
+51
+00:03:33.253 --> 00:03:36.973
+If and only if A and B are both false, and
+its true otherwise.
+
+52
+00:03:36.973 --> 00:03:39.718
+Okay.
+So, hopefully this give you an intuitive
+
+53
+00:03:39.718 --> 00:03:42.707
+understanding of the different logical
+operators.
+
+54
+00:03:42.707 --> 00:03:47.830
+And what I to point out you, don't have to
+have simple expressions that only include
+
+55
+00:03:47.830 --> 00:03:50.880
+one operator.
+I could have for instance have A, and.
+
+56
+00:03:51.300 --> 00:03:59.691
+B or C and.
+Not D.
+
+57
+00:03:59.691 --> 00:04:04.793
+Okay?
+And so, you can build this up in
+
+58
+00:04:04.793 --> 00:04:08.845
+arbitrarily complex ways and you have to
+evaluate them in the same way that we
+
+59
+00:04:08.845 --> 00:04:12.846
+evaluated the simpler expressions.
+So you can build a big giant truth table
+
+60
+00:04:12.846 --> 00:04:16.899
+and you can actually figure out what is
+the value of this expression under all
+
+61
+00:04:16.899 --> 00:04:21.191
+possible inputs.
+So we will actually use Boolean Logic in
+
+62
+00:04:21.191 --> 00:04:24.775
+our program,
+So let's take a look at how they work in
+
+63
+00:04:24.775 --> 00:04:28.087
+Python.
+Oka? So I can hand variables that take on
+
+64
+00:04:28.087 --> 00:04:32.211
+the values true or false.
+So in Python, the word's true with a
+
+65
+00:04:32.211 --> 00:04:36.808
+capital T and false with a capital F
+represent these Boolean values.
+
+66
+00:04:36.808 --> 00:04:40.392
+I can print them and assume and do the
+obvious thing.
+
+67
+00:04:40.392 --> 00:04:46.968
+Okay? You can see true and false show up
+here. I can create logical expressions,
+
+68
+00:04:46.968 --> 00:04:52.092
+So let's put a little separator there.
+I can print A or not A.
+
+69
+00:04:52.092 --> 00:04:57.733
+I can print.
+A and B. And print A or B. Okay? let's run
+
+70
+00:04:57.733 --> 00:05:02.270
+this.
+You can see when A is true and B is false.
+
+71
+00:05:02.270 --> 00:05:05.129
+Nod A is false, A and B is false, and A or
+B is true.
+
+72
+00:05:05.129 --> 00:05:09.279
+This all makes sense, and this is directly
+from, from the previous slide.
+
+73
+00:05:09.279 --> 00:05:13.597
+You can go back and look at the truth
+tables if you're a little bit confused
+
+74
+00:05:13.597 --> 00:05:15.280
+still.
+Now, you notice that the.
+
+75
+00:05:15.280 --> 00:05:20.335
+Boolean logic operators in Python are the
+English words, not and, and or and that's
+
+76
+00:05:20.335 --> 00:05:24.220
+kind of nice cuz it's very easy to see
+what's going on here.
+
+77
+00:05:24.220 --> 00:05:29.275
+Unlike some other programming languages
+where they use more cryptic operators for
+
+78
+00:05:29.275 --> 00:05:33.036
+these things, okay?
+And I don't have to limit myself to simple
+
+79
+00:05:33.036 --> 00:05:36.920
+expressions like that.
+I can do the complicated expression that
+
+80
+00:05:36.920 --> 00:05:40.866
+we saw on the previous slide.
+I can print a and b, or c and not d.
+
+81
+00:05:40.866 --> 00:05:43.968
+Now, I better define.
+C and D to be something here.
+
+82
+00:05:43.968 --> 00:05:45.837
+C equals true.
+D equals false.
+
+83
+00:05:45.837 --> 00:05:49.317
+Let's run this.
+And you can see for this set of inputs,
+
+84
+00:05:49.317 --> 00:05:54.150
+that expression evaluates to true.
+And I invite you to sort of walk through
+
+85
+00:05:54.150 --> 00:05:58.081
+it on your own and make sure that you
+understand what's going on.
+
+86
+00:05:58.124 --> 00:06:01.238
+All right?
+So this is how we use Boolean logic inside
+
+87
+00:06:01.238 --> 00:06:05.049
+Python programs.
+So Boolean logic is interesting and useful
+
+88
+00:06:05.049 --> 00:06:10.284
+in and of itself, but you don't always
+have true and false values lying around in
+
+89
+00:06:10.284 --> 00:06:13.774
+your program.
+Instead, you end up generating them a lot
+
+90
+00:06:13.774 --> 00:06:14.615
+of time.
+Okay?
+
+91
+00:06:14.615 --> 00:06:17.717
+And we generate them using comparison
+operators.
+
+92
+00:06:17.717 --> 00:06:22.500
+Python has six comparison operators.
+It has greater than, less than, greater
+
+93
+00:06:22.500 --> 00:06:26.701
+than or equal to, less than or equal to,
+equal to and not equal to.
+
+94
+00:06:26.701 --> 00:06:31.872
+And these six comparison operators allow
+you to take two values, compare them to
+
+95
+00:06:31.872 --> 00:06:34.587
+each other and generate a boolean.
+Alright?
+
+96
+00:06:34.587 --> 00:06:39.289
+So let's try it out.
+So let's say A equals seven greater than
+
+97
+00:06:39.289 --> 00:06:40.364
+three.
+Print A.
+
+98
+00:06:40.364 --> 00:06:46.508
+Now instead of just assigning true or
+false to A we're assigning A to the value
+
+99
+00:06:46.508 --> 00:06:49.811
+of the expression seven greater than
+three.
+
+100
+00:06:49.811 --> 00:06:56.109
+And we know that seven is greater than
+three so I would expect this to print true
+
+101
+00:06:56.109 --> 00:06:58.797
+and low and behold it does.
+Alright?
+
+102
+00:06:58.797 --> 00:07:03.559
+And there's no reason why I just tapped
+out a constance there.
+
+103
+00:07:03.559 --> 00:07:05.095
+I could say X= eight.
+Y=5.
+
+104
+00:07:05.095 --> 00:07:05.249
+Five.
+B=
+
+105
+00:04:43.499 --> 00:07:08.207
+X greater than or equal to Y.
+Print the.
+
+106
+00:07:08.207 --> 00:07:10.635
+Okay.
+Now I've got an expression involving
+
+107
+00:07:10.635 --> 00:07:14.217
+variable, involving variables and X
+greater than or equal to Y.
+
+108
+00:07:14.217 --> 00:07:18.725
+I would expect that also to evaluate to
+true, because eight is, in fact, greater
+
+109
+00:07:18.725 --> 00:07:21.961
+than or equal to Y and again it does what
+it's expected.
+
+110
+00:07:21.961 --> 00:07:25.140
+Alright and since I used greater than or
+equal to here.
+
+111
+00:07:25.140 --> 00:07:31.180
+I could actually change that to be the
+same number, it remains true.
+
+112
+00:07:31.180 --> 00:07:34.876
+If I take out the equal,= , it becomes
+false. Okay?
+
+113
+00:07:34.876 --> 00:07:39.204
+Alright.
+Now, I don't have to just do comparisons
+
+114
+00:07:39.204 --> 00:07:43.531
+on numbers.
+I can also do comparisons on strings.
+
+115
+00:07:43.531 --> 00:07:45.604
+So I could say, C=hello==hello, Hello""
+=,, = Hello."" Right?
+
+116
+00:07:45.604 --> 00:07:48.580
+Print C.
+What's gonna happen here.
+
+117
+00:07:48.580 --> 00:07:50.136
+This value is true.
+Why?
+
+118
+00:07:50.136 --> 00:07:54.807
+Because the text of the string hello is
+the same as the text of the string hello,
+
+119
+00:07:54.807 --> 00:07:58.727
+and that makes good sense.
+Alright and I want to point out here that
+
+120
+00:07:58.727 --> 00:08:01.841
+we're comparing the text, not the way you
+generated it.
+
+121
+00:08:01.841 --> 00:08:06.338
+If you recall, we can have strings that
+use either single or double quotes and
+
+122
+00:08:06.338 --> 00:08:09.164
+that does not matter here.
+I'm comparing the text.
+
+123
+00:08:09.164 --> 00:08:11.470
+Okay?
+So if I actually want to get it to
+
+124
+00:08:11.470 --> 00:08:14.526
+evaluate to false, I have to change the
+actual string.
+
+125
+00:08:14.526 --> 00:08:16.544
+Now when I compare, it's false.
+Okay?
+
+126
+00:08:16.544 --> 00:08:20.811
+So it's important to remember I'm
+comparing the text, not the, the way that
+
+127
+00:08:20.811 --> 00:08:22.934
+it looks.
+Okay, with the single or the double
+
+128
+00:08:22.934 --> 00:08:25.088
+quotes.
+Now I also want to point something else
+
+129
+00:08:25.088 --> 00:08:26.590
+out about this expression.
+Okay.
+
+130
+00:08:26.590 --> 00:08:31.064
+There is a single equal sign here, and
+there is a double equal sign here.
+
+131
+00:08:31.064 --> 00:08:36.034
+This is a source of a lot of errors for
+beginning programmers, and quite frankly,
+
+132
+00:08:36.034 --> 00:08:40.259
+experienced programmers as well.
+The single equal sign is assignment.
+
+133
+00:08:40.259 --> 00:08:43.180
+Alright?
+So, this means, take what's on the right
+
+134
+00:08:43.180 --> 00:08:48.336
+hand side of the equal sign, evaluate it,
+and put the value into the variable that's
+
+135
+00:08:48.336 --> 00:08:50.014
+on the left.
+In this case C,
+
+136
+00:08:50.014 --> 00:08:53.781
+Alright?
+The double equals is, is equal. Tell me if
+
+137
+00:08:53.781 --> 00:08:58.154
+the left and right are equal to each other
+and evaluate to true or false okay?
+
+138
+00:08:58.154 --> 00:09:02.528
+So try not to get that mixed up although
+I'm sure that you will every once in
+
+139
+00:09:02.528 --> 00:09:07.013
+awhile, and most of the time Python will
+give you an error alright, when you mess
+
+140
+00:09:07.013 --> 00:09:10.236
+it up.
+All right, I don't have to just do numbers
+
+141
+00:09:10.236 --> 00:09:15.461
+or strings or integers or strings.
+I can do pretty much any Python type here,
+
+142
+00:09:15.461 --> 00:09:21.028
+so I could say, hey, is 20.6 less than or
+equal to 18.3, printd.'Kay so that should
+
+143
+00:09:21.028 --> 00:09:26.390
+evaluate to false I should hope.'Kay.
+And this is now a good way of generating
+
+144
+00:09:26.390 --> 00:09:30.514
+these Boolean values.
+Using these comparison operators, I can
+
+145
+00:09:30.514 --> 00:09:35.120
+then combine them, you know, with my
+favorite expression from before.
+
+146
+00:09:36.960 --> 00:09:41.339
+And evaluate everything, okay, with this
+combination of values my expression of
+
+147
+00:09:41.339 --> 00:09:44.751
+values is too true.
+Alright so we're gonna see this alone in
+
+148
+00:09:44.751 --> 00:09:49.187
+python programs where you use these
+comparison operators to generate Booleans
+
+149
+00:09:49.187 --> 00:09:53.737
+then you generate Boolean and you try to
+figure out what you like to do next in
+
+150
+00:09:53.737 --> 00:09:56.353
+your program.
+That ends our quick and painless
+
+151
+00:09:56.353 --> 00:10:00.619
+introduction to the mathematical concepts
+of Boolean logic and comparisons.
+
+152
+00:10:00.619 --> 00:10:04.828
+In the next video we'll see how to use
+concepts to build more interesting
